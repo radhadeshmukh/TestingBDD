@@ -12,7 +12,7 @@ public class AmazonTest {
        
        @Given("^I navigate to the login page$")
        public void i_navigate_to_the_login_page() throws Throwable {
-    	   Reusablefunction.login("examples@gmail.com", "password");
+    	   Reusablefunction.login("examples@gmail.com", "passwordadded");
        }
 
        @Given("^User search for Lenovo Laptop$")
