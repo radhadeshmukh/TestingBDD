@@ -1,0 +1,18 @@
+  
+package TestRunner;
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = {"src/test/java/Features/Amazon.feature"}, 
+        glue="stepDefination",
+        tags ="@SeleniumTest",monochrome=true,
+        plugin = {"pretty",
+        "json:target/cucumber_json_reports/home-page.json",
+        "html:target/home-page-html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+public class AmazonTestrunner {				
+
+}
